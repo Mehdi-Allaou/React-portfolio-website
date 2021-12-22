@@ -1,12 +1,8 @@
 import { useState, useEffect } from 'react';
 import { PortfolioList } from '../portfoliolist/PortfolioList';
+import { projectPortfolio } from '../../data';
+
 import './portfolio.scss';
-import { 
-  featuredPortfolio, 
-  webPortfolio, 
-  mobilePortfolio, 
-  designPortfolio, 
-  contentPortfolio } from '../../data';
 
 
 export const Portfolio = () => {
@@ -15,32 +11,14 @@ export const Portfolio = () => {
   const [data, setData] = useState([]);
 
   const list = [
-    { id: 'featured', title: 'Featured' },
-    { id: 'web', title: 'Web App' },
-    { id: 'mobile', title: 'Mobile App' },
-    { id: 'design', title: 'Design' },
-    { id: 'content', title: 'Content' }
+    { id: 'project', title: 'Project' }
   ];
 
   useEffect(() => {
     switch (selected) {
       case 'featured':
-        setData(featuredPortfolio);
+        setData(projectPortfolio);
         break;
-      case 'web':
-        setData(webPortfolio);
-        break;
-      case 'mobile':
-        setData(mobilePortfolio);
-        break;
-      case 'design':
-        setData(designPortfolio);
-        break;
-      case 'content':
-        setData(contentPortfolio);
-        break;
-        default:
-          setData(featuredPortfolio);
     }
   }, [selected])
 
@@ -59,9 +37,16 @@ export const Portfolio = () => {
       </ul>
       <div className="container">
         {data.map(_data => (
+        <div>
+          <p className='project-info'>{_data.info}</p>
           <div className="item">
-          <img src={_data.img} alt="" />
-          <h3>{_data.title}</h3>
+            <img src={_data.img} alt="" target="_blank" onClick={() => window.location.href=_data.src}/>
+            <h3>{_data.title}</h3>
+            <div className="buttons">
+              <a href="" target="_blank" >View code</a>
+              <a href="" target="_blank"></a>
+            </div>
+          </div>
         </div>
           ))}
       </div>

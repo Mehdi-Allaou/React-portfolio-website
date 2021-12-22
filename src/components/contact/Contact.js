@@ -13,11 +13,13 @@ export const Contact = () => {
   return (
     <div className='contact' id='contact'>
       <div className="left">
-        <img src="assets/shake.svg" alt="" />
+        <img src="" alt="" />
       </div>
       <div className="right">
         <h2>Contact.</h2>
         <form onSubmit={handleSubmit}>
+          <input type="text" placeholder='Firstname'/>
+          <input type="text" placeholder='Lastname'/>
           <input type="text" placeholder='Email'/>
           <textarea placeholder='Message'></textarea>
           <button type='Submit'>Send</button>

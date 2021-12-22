@@ -14,6 +14,11 @@
   justify-content: center;
   transition: all 1s ease;
 
+  @include mobile {
+    width: 200px;
+    
+  }
+
   &.active {
     right: 0;
   }
@@ -26,6 +31,11 @@
     font-weight: 300;
     color: #fff;
     width: 60%;
+
+    @include mobile {
+      font-size: 25px;
+      width: 80%;
+    }
 
     li {
       margin-bottom: 25px;

@@ -1,12 +1,23 @@
+@import '../../global.scss';
+
 .testimonials {
-  background-color: #fff;
+  background: linear-gradient(to bottom, hsl(0, 0%, 80%) 0%, hsl(0, 0%, 75%) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @include mobile {
+    justify-content: space-around;
+  }
+
+
+
   h1 {
     font-size: 50px;
 
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   .container{
@@ -16,7 +27,14 @@
     align-items: center;
     justify-content: center;
 
+    @include mobile {
+      flex-direction: column;
+      height: 100%;
+
+    }
+
     .card {
+      background-color: rgb(112, 111, 107);
       width: 250px;
       height: 70%;
       border-radius: 10px;
@@ -27,10 +45,21 @@
       padding: 20px;
       transition: all 1s ease;
 
+      @include mobile {
+        height: 180px;
+        margin: 10px 0;
+      }
+
       &.featured {
         width: 300px;
         height: 75%;
         margin: 0 30px;
+
+        @include mobile {
+          height: 180px;
+          width: 250px;
+          margin: 1px;
+        }
       }
 
       &:hover {
@@ -56,6 +85,11 @@
           border-radius: 50%;
           object-fit: cover;
           margin: 0 30px;
+
+          @include mobile {
+            width: 30px;
+            height: 30px;
+          }
         }
       }
     }
@@ -63,7 +97,12 @@
     .center {
       padding: 10px;
       border-radius: 10px;
-      background-color: #f3eaec;
+      background-color: #9dd3c1;
+
+      @include mobile {
+        font-size: 12px;
+        padding: 5px;
+      }
     }
     .bottom {
       display: flex;
@@ -73,9 +112,17 @@
     }
     h3 {
       margin-bottom: 5px;
+
+      @include mobile {
+        font-size: 15px;
+      }
     }
     h4 {
-      color: gray;
+      color: rgb(172, 172, 172);
+      
+      @include mobile {
+        font-size: 12px;
+      }
     }
   }
 

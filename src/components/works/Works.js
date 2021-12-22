@@ -7,16 +7,16 @@ export const Works = () => {
 
   const data = [
     { id: '1', 
-      icon: './assets/mobile.png', 
+      icon: './assets/project1.png', 
       title: 'Web Design',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus fugit mollitia eligendi, sint illum?',
-      img: 'https://images.unsplash.com/photo-1638913971873-bcef634bdcd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+      img: './assets/project1.png'
     },
     { id: '2', 
       icon: './assets/globe.png', 
       title: 'Globe design',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus fugit mollitia eligendi, sint illum?',
-      img: 'https://images.unsplash.com/photo-1639905517784-b036046b14fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+      img: './assets/project1.png'
     }
   ];
 
