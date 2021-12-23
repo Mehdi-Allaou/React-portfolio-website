@@ -1,12 +1,5 @@
 @import '../../global.scss';
 
-p::first-letter {
-  color: red !important;
-}
-.project-info:first-letter  {
-  color: red !important;
-}
-
 .portfolio {
   background: linear-gradient(to bottom, hsl(0, 0%, 90%) 0%, hsl(0, 0%, 85%) 100%);
   display: flex;
@@ -53,14 +46,23 @@ p::first-letter {
       align-items: center;
       text-transform: uppercase;
       font-weight: 500;
+      flex-wrap: wrap;
+      margin: auto;
+    
+      span {
+        display: block;
+        &:before{
+          content: '#';
+          color: red;
+          font-weight: 500;
+          font-size: 25px;
+        }
+      }
 
       
       
     }
-    .container p:first-letter {
-      font-size: 200%;
-      color: #8A2BE2;
-    }
+  
 
     .item {
       width: 300px;

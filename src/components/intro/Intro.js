@@ -8,7 +8,6 @@ export const Intro = () => {
 
   useEffect(() => {
     init(textRef.current, {
-      showCursor: false,
       backDelay: 1500,
       backspeed: 60,
       showCursor: true,

@@ -38,8 +38,7 @@ export const Portfolio = () => {
       <div className="container">
         {data.map(_data => (
         <div>
-          <p>HejHej</p>
-          <p class='project-info'>Hej</p>
+          <p className='project-info'>{_data.info.map(keyword => <span>{keyword}&nbsp;</span>)}</p>
           <div className="item">
             {/* <img src={_data.img} alt="" onClick={() => window.location.href=_data.src}/> */}
             <img src={_data.img} alt="" onClick={() => window.open(_data.src, '_blank')}/>
