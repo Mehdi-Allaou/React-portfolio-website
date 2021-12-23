@@ -1,5 +1,12 @@
 @import '../../global.scss';
 
+p::first-letter {
+  color: red !important;
+}
+.project-info:first-letter  {
+  color: red !important;
+}
+
 .portfolio {
   background: linear-gradient(to bottom, hsl(0, 0%, 90%) 0%, hsl(0, 0%, 85%) 100%);
   display: flex;
@@ -12,8 +19,8 @@
     @include mobile{
       font-size: 20px;
     }
-  }
 
+  }
   ul {
     margin: 10px;
     padding: 0;
@@ -46,9 +53,11 @@
       align-items: center;
       text-transform: uppercase;
       font-weight: 500;
+
+      
       
     }
-    .container p::first-letter {
+    .container p:first-letter {
       font-size: 200%;
       color: #8A2BE2;
     }
@@ -66,7 +75,6 @@
       position: relative;
       transition: all .5s ease;
       cursor: pointer;
-      flex-direction: column;
 
       @include mobile{
         width: 280px;
@@ -79,7 +87,7 @@
         font-size: 20px;
 
       }
-
+      
       img {
         height: 100%;
         width: 100%;

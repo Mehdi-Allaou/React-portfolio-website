@@ -38,14 +38,12 @@ export const Portfolio = () => {
       <div className="container">
         {data.map(_data => (
         <div>
-          <p className='project-info'>{_data.info}</p>
+          <p>HejHej</p>
+          <p class='project-info'>Hej</p>
           <div className="item">
-            <img src={_data.img} alt="" target="_blank" onClick={() => window.location.href=_data.src}/>
+            {/* <img src={_data.img} alt="" onClick={() => window.location.href=_data.src}/> */}
+            <img src={_data.img} alt="" onClick={() => window.open(_data.src, '_blank')}/>
             <h3>{_data.title}</h3>
-            <div className="buttons">
-              <a href="" target="_blank" >View code</a>
-              <a href="" target="_blank"></a>
-            </div>
           </div>
         </div>
           ))}

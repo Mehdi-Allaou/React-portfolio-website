@@ -4,7 +4,8 @@ export const projectPortfolio = [
       title: "Fake Restaurant App",
       img: "./assets/project1.png",
       src: 'https://mehdiallaou-project1.netlify.app',
-      info: ['#css ', '#html5 ', '#javascript ', '#netlify ']
+      info: 'D#css'
+      // info: '#css ', '#html5 ', '#javascript ', '#netlify ']
     },
     {
       id: 2,
