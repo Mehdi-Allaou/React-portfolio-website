@@ -1,24 +1,61 @@
 @import '../../global.scss';
 
-h1{
-  display: flex;
-  flex-direction: column;
-  display: inline-block;
-}
+
 
 
 .about {
-  background-color: #fff;
+  // background: linear-gradient(to bottom, hsl(240, 100%, 93%) 0%, hsl(240, 100%, 88%) 100%);
+  // background-color: $fourth-color;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // testing styling
+  border-top: 2px solid $mainColor;
+     // testing styling
+
+  .headtext {
+    h1 {
+      display: flex;
+      flex-direction: column;
+      font-size: 50px;
+
+      overflow: visible;
+      margin-bottom: 50px;
+  
+      // testing styling
+      width: 400px;
+      background-color: white;
+      text-align: center;
+      border-radius: 0 0 50px 50px;
+          // testing styling
+  
+  
+      @include mobile{
+        font-size: 30px;
+        width: 300px;
+  
+      }
+    }
+  }
 
 
-  .left-container {
+  .container {
+    display: flex;
+
+
+    .left-container {
     flex: 1;
-    background-color: pink;
+    background-color: $divider-color;
   }
 
   .right-container {
     flex: 1;
-    background-color: lightcoral;
+    background-color: $third-color;
   }
+
+
+  }
+
+  
 }

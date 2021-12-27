@@ -15,13 +15,13 @@ export const Topbar = ({ menuOpen, setMenuOpen }) => {
           </div>
 
           <div className="itemContainer">
-            <a href="mehallaou@gmail.com">
+            <a href="mailto:mehallaou@gmail.com">
               <Mail className='icon' />
             </a>
           </div>
 
           <div className="itemContainer">
-            <a href="www.linkedin.com/in/mehdi-allaou">
+            <a href="https://linkedin.com/in/mehdi-allaou">
               <LinkedIn className='linkedin' />
             </a>
           </div>

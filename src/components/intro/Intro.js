@@ -11,7 +11,7 @@ export const Intro = () => {
       backDelay: 1500,
       backspeed: 60,
       showCursor: true,
-      strings: ['Developer', 'Designer']
+      strings: ['Developer', 'Designer', 'Frontender']
     });
   }, [])
 

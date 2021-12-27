@@ -1,21 +1,37 @@
 @import '../../global.scss';
 
 .portfolio {
-  background: linear-gradient(to bottom, hsl(0, 0%, 90%) 0%, hsl(0, 0%, 85%) 100%);
+  // background: linear-gradient(to bottom, hsl(240, 100%, 88%) 0%, hsl(240, 100%, 83%) 100%);
+  // background-color: $fourth-color;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
+
+  // testing styling
+  border-top: 2px solid $mainColor;
+     // testing styling
 
   h1 {
     font-size: 50px;
+    overflow: visible;
+
+    // testing styling
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+        // testing styling
+
 
     @include mobile{
-      font-size: 20px;
+      font-size: 30px;
+      width: 300px;
+
     }
 
   }
   ul {
-    margin: 10px;
+    // margin: 10px;
     padding: 0;
     list-style: none;
     display: flex;
@@ -33,6 +49,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    // overflow: visible;
 
     @include mobile{
       width: 100%;
@@ -53,7 +70,7 @@
         display: block;
         &:before{
           content: '#';
-          color: red;
+          color: $second-color;
           font-weight: 500;
           font-size: 25px;
         }
@@ -73,7 +90,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: $fourth-color;
       position: relative;
       transition: all .5s ease;
       cursor: pointer;
@@ -87,22 +104,23 @@
       h3 {
         position: absolute;
         font-size: 20px;
-
+        color: $fourth-color
       }
       
       img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        // object-fit: cover;
         z-index: 1;
       }
 
       &:hover {
-        background-color: #353535;
+        background-color: $mainColor;
+
         img {
           opacity: 0.2;
           z-index: 0;
-
+          color: $mainColor;
         }
       }
 
