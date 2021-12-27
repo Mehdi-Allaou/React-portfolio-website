@@ -10,10 +10,6 @@
 
 # production
 /build
-/src/works
-/src/testimonials
-/works
-/testimonials
 
 # misc
 .DS_Store
