@@ -20,7 +20,6 @@
       display: flex;
       align-items: center;
 
-
       .logo {
         font-size: 40px;
         font-weight: 700;
@@ -33,7 +32,6 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
-        
 
         @include mobile{
           display: none;
@@ -42,30 +40,18 @@
         a {
           color: #fff;
           font-size: 25px;
-          // display: flex;
-          // align-items: center;
-
+          
           :hover {
             color: $mainColor;
             transition: all .5s ease;
-            // font-size: 30px;
           }
         }
-
-
-
-        // .icon {
-        //   font-size: 18px;
-        //   margin-right: 5px;
-        // }
-
         span {
           font-size: 15px;
           font-weight: 500;
         }
       }
     }
-
     .right {
       .hamburger {
         width: 32px;
@@ -74,7 +60,6 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
-
 
         span {
           width: 100%;
@@ -85,9 +70,7 @@
         }
       }
     }
-    
   }
-
   &.active {
     background-color: $mainColor;
     color: #fff;

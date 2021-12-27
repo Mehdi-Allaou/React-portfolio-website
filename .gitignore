@@ -11,6 +11,8 @@
 # production
 /build
 /assets
+/src/works
+/src/testimonials
 
 # misc
 .DS_Store

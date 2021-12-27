@@ -1,60 +1,44 @@
 @import '../../global.scss';
 
 .portfolio {
-  // background: linear-gradient(to bottom, hsl(240, 100%, 88%) 0%, hsl(240, 100%, 83%) 100%);
-  // background-color: $fourth-color;
   display: flex;
   flex-direction: column; 
   align-items: center;
-
-  // testing styling
   border-top: 2px solid $mainColor;
-     // testing styling
 
   h1 {
     font-size: 50px;
     overflow: visible;
-
-    // testing styling
     width: 400px;
     background-color: white;
     text-align: center;
     border-radius: 0 0 50px 50px;
-        // testing styling
-
 
     @include mobile{
       font-size: 30px;
       width: 300px;
-
     }
-
   }
   ul {
-    // margin: 10px;
     padding: 0;
     list-style: none;
     display: flex;
 
     @include mobile{
-      // margin: 10px 0;
       flex-wrap: wrap;
       justify-content: center;
     }
   }
-
   .container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    // overflow: visible;
-
+    
     @include mobile{
       width: 100%;
     }
-
     .project-info {
       margin: 10px 5px auto;
       max-width: 300px;
@@ -75,12 +59,7 @@
           font-size: 25px;
         }
       }
-
-      
-      
     }
-  
-
     .item {
       width: 300px;
       height: 200px;
@@ -99,35 +78,24 @@
         width: 280px;
         height: 190px;
       }
-
-
       h3 {
         position: absolute;
         font-size: 20px;
         color: $fourth-color
       }
-      
       img {
         height: 100%;
         width: 100%;
-        // object-fit: cover;
         z-index: 1;
       }
-
       &:hover {
         background-color: $mainColor;
-
         img {
           opacity: 0.2;
           z-index: 0;
           color: $mainColor;
         }
       }
-
-      // .buttons {
-      //   display: flex;
-      //   flex-direction: flex-end;
-      // }
     }
   }
 }
