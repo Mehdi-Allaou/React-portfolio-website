@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  // justify-content: space-between;
 
   // testing styling
   border-top: 2px solid $mainColor;
@@ -20,8 +21,8 @@
       // flex-direction: column;
       font-size: 50px;
 
-      overflow: visible;
-      margin-bottom: 50px;
+      // overflow: visible;
+      // margin-bottom: 50px;
   
       // testing styling
       width: 400px;
@@ -42,6 +43,7 @@
 
   .container {
     display: flex;
+    margin: 40px;
     
 
 

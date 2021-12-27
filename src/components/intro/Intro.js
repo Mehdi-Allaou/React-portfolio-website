@@ -19,18 +19,17 @@ export const Intro = () => {
     <div className='intro' id='intro'>
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/profilbildtest.png" alt="" />
+          <img className='image' src="assets/profilbildtest.png" alt="picture of me" />
         </div>
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi There, I'm</h2>
-          <h1>Mehdi Allaou</h1>
+          <h1>Hi There, I'm</h1>
+          <h2>Mehdi Allaou</h2>
           <h3>Junior <span ref={textRef}></span></h3>
         </div>
-        <a href="#portfolio">
-
-        <img src="assets/down.png" alt="" />
+        <a href="#about">
+        <img src="assets/down.png" alt="leading arrow to the next page" />
         </a>
       </div>
     </div>
