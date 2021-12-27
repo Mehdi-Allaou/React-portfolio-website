@@ -17,7 +17,14 @@ export const Contact = () => {
       </div>
       <div className="container">
         <div className="left">
-          <img src="" alt="" />
+          <div className="contact-text">
+            <ul className='contact-list'>
+              <p>+46 729 23 99 23</p>
+              <p>mehallaou@gmail.com</p>
+              <a href="https://linkedin.com/in/mehdi-allaou">https://linkedin.com/in/mehdi-allaou</a>
+              <a href="https://github.com/Mehdi-Allaou">https://github.com/Mehdi-Allaou</a>
+            </ul>
+          </div>
         </div>
         <div className="right">
           <form onSubmit={handleSubmit}>

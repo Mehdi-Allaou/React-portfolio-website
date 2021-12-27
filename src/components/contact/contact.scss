@@ -3,23 +3,21 @@
 .contact {
   // background: linear-gradient(to bottom, hsl(240, 100%, 83%) 0%, hsl(240, 100%, 78%) 100%);
   // background-color: $fourth-color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // height: 100vh;
 
   // testing styling
   border-top: 2px solid $mainColor;
      // testing styling
 
-  @include mobile {
-    flex-direction: column;
-  }
-
   .headtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     h1 {
-      display: flex;
-      flex-direction: column;
       font-size: 50px;
 
       overflow: visible;
@@ -43,22 +41,32 @@
 
   .container {
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-    // @include mobile {
-    //   display: flex;
-    //   flex-direction: column;
-    // }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 80px;
+    }
 
 
     .left {
       flex: 1;
       // overflow: hidden;
-      display: flex;
-      flex-direction: column;
+      // display: flex;
+      // flex-direction: column;
    
       // img {
       //   height: 100%;
       // }
+      .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-decoration: none;
+      }
      }
    
      .right {
