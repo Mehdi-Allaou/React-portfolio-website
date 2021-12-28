@@ -11,7 +11,7 @@ export const Menu = ({ menuOpen, setMenuOpen }) => {
           <a href="#about">About me</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#projects">Projects</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <a href="#contact">Contact</a>

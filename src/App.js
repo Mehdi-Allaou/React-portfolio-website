@@ -1,9 +1,10 @@
 import { Topbar } from "./components/topbar/Topbar";
+import { Menu } from "./components/menu/Menu";
 import { Intro } from "./components/intro/Intro";
 import { About } from "./components/about/About";
-import { Portfolio } from "./components/portfolio/Portfolio";
+import { Projects } from "./components/projects/Projects";
 import { Contact } from "./components/contact/Contact";
-import { Menu } from "./components/menu/Menu";
+
 import { useState } from "react";
 
 import './app.scss'
@@ -18,7 +19,7 @@ function App() {
       <div className="sections">
         <Intro />
         <About />
-        <Portfolio />
+        <Projects />
         <Contact />
       </div>
     </div>

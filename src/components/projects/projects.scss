@@ -1,6 +1,6 @@
 @import '../../global.scss';
 
-.portfolio {
+.projects {
   display: flex;
   flex-direction: column; 
   align-items: center;
@@ -9,12 +9,14 @@
   h1 {
     font-size: 50px;
     width: 400px;
+    margin-bottom: 50px;
     overflow: visible;
     background-color: white;
     text-align: center;
     border-radius: 0 0 50px 50px;
 
     @include mobile{
+      margin-bottom: 30px;
       font-size: 30px;
       width: 300px;
     }

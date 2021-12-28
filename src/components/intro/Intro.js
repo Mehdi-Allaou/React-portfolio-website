@@ -19,7 +19,7 @@ export const Intro = () => {
     <div className='intro' id='intro'>
       <div className="left">
         <div className="imgContainer">
-          <img className='image' src="assets/profilbildtest.png" alt="picture of me" />
+          <img className='main-img' src="assets/profilbildtest.png" alt="Photo of me" />
         </div>
       </div>
       <div className="right">

@@ -13,13 +13,13 @@ export const Contact = () => {
   return (
     <div className='contact' id='contact'>
       <div className="headtext">
-        <h1>Contact</h1>
+        <h1>contact</h1>
       </div>
       <div className="container">
         <div className="left">
           <div className="contact-text">
             <ul className='contact-list'>
-              <h4>Call me on: </h4>
+              <h4>Cellphone: </h4>
               <a href="tel:+46729239923">
                 <p>+46 729 23 99 23</p>
               </a>
@@ -45,7 +45,7 @@ export const Contact = () => {
             <input type="text" placeholder='Email'/>
             <textarea placeholder='Message'></textarea>
             <button type='Submit'>Send</button>
-            {message && <span>Thanks, I'll reply asap!</span>}
+            {message && <span>Thank you for your message, I'll reply as soon as possible :)</span>}
           </form>
         </div>
       </div>
