@@ -32,13 +32,15 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
+        z-index: 10;
 
         @include mobile{
           display: none;
         }
 
         a {
-          color: #fff;
+          color: inherit;
+          // color: #fff;
 
           svg {
             font-size: 30px;
@@ -46,7 +48,8 @@
           
           
           :hover {
-            color: $mainColor;
+            color: #fff;
+            // color: $mainColor;
             transition: all .5s ease;
           }
         }
@@ -78,6 +81,11 @@
   &.active {
     background-color: $mainColor;
     color: #fff;
+  // &.active *:hover {
+  //   color:red;
+  // }
+
+
 
     .hamburger {
       span {
