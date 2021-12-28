@@ -38,7 +38,7 @@ export const Contact = () => {
             </ul>
           </div>
         </div>
-        <div className="right">
+        {/* <div className="right">
           <form onSubmit={handleSubmit}>
             <input type="text" placeholder='Firstname'/>
             <input type="text" placeholder='Lastname'/>
@@ -47,7 +47,7 @@ export const Contact = () => {
             <button type='Submit'>Send</button>
             {message && <span>Thank you for your message, I'll reply as soon as possible :)</span>}
           </form>
-        </div>
+        </div> */}
       </div>
       
     </div>

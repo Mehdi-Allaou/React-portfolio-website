@@ -24,12 +24,21 @@ export const Projects = () => {
       <h1>projects</h1>
       <div className="container">
         {data.map(_data => (
-        <div>
+        <div className='wrapper'>
           <p className='project-info'>{_data.info.map(keyword => <span>{keyword}&nbsp;</span>)}</p>
           <div className="item">
-            <img src={_data.img} alt="" onClick={() => window.open(_data.src, '_blank')}/>
+            <img 
+              src={_data.img} 
+              alt="" 
+              onClick={() => window.open(_data.src, '_blank')}
+            />
             <h3>{_data.title}</h3>
           </div>
+            <button 
+              className='btn'
+              onClick={() => window.open(_data.git, '_blank')}>
+              View the code
+            </button>
         </div>
           ))}
       </div>
