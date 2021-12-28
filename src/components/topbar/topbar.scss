@@ -39,7 +39,11 @@
 
         a {
           color: #fff;
-          font-size: 25px;
+
+          svg {
+            font-size: 30px;
+          }
+          
           
           :hover {
             color: $mainColor;

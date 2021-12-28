@@ -9,7 +9,7 @@ export const Topbar = ({ menuOpen, setMenuOpen }) => {
           <a href="#intro" className='logo'>mehdi</a>
           
           <div className="itemContainer">
-            <a href="+46 729 23 99 23">
+            <a href="tel:+46729239923">
             <Call className='icon' />
             </a>
           </div>

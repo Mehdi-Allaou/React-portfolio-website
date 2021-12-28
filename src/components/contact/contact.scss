@@ -18,6 +18,7 @@
       border-radius: 0 0 50px 50px;
 
       @include mobile{
+        margin-bottom: 30px;
         font-size: 30px;
         width: 300px;
       }
@@ -26,19 +27,43 @@
   .container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
 
     @include mobile {
       flex-direction: column;
-      gap: 80px;
+      gap: 25px;
     }
     .left {
       flex: 1;
-      .contact-list {
+
+      .contact-text {
+
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-        text-decoration: none;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+
+        .contact-list {
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          text-decoration: none;
+          width: 90%;
+  
+          @include mobile {
+            align-items: center;
+            margin: 0 auto;
+            padding: 0;
+          }
+  
+          h4 {
+            margin-top: 15px;
+          }
+          a {
+            text-decoration: none;
+          }
+  
+        }
       }
     }
     .right {
@@ -59,7 +84,7 @@
           justify-content: flex-start;
         }        
         input {
-          width: 300px;
+          width: 90%;
           height: 30px;
           font-size: 14px;
           left: 0;
@@ -68,38 +93,33 @@
           border: none;
         }
         textarea {
-          width: 100%;
+          width: 90%;
           height: 200px;
           font-size: 14px;
           background-color: $third-color;
           border: none;
 
-          @include mobile {
-            // width: 200px;
-            // height: 100px;
+        }
+        button {
+          height: 20px;
+          width: 40%;
+          margin: 20px 0;
+          height: 30px;
+          color: white;
+          background-color: $mainColor;
+          border: none;
+          border-radius: 8px;
+          font-size: 20px;
+          font-weight: 500;
+          cursor: pointer;
+  
+          &:focus {
+            outline: none;
           }
         }
-      }
-  
-      button {
-        height: 20px;
-        width: 50%;
-        margin: 10px auto;
-        height: 30px;
-        color: white;
-        background-color: $mainColor;
-        border: none;
-        border-radius: 10px;
-        font-weight: 500;
-        cursor: pointer;
-
-        &:focus {
-          outline: none;
+        span {
+          color: green;
         }
-      }
-
-      span {
-        color: green;
       }
     } 
   } 

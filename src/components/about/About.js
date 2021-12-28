@@ -5,6 +5,7 @@ export const About = () => {
     <div className='about' id='about' >
       <div className="headtext">
         <h1>About me</h1>
+        <br />
       </div>
       <div className="container">
         <div className="left-container">
