@@ -25,6 +25,7 @@ export const Projects = () => {
       <div className="container">
         {data.map(_data => (
         <div className='wrapper'>
+          <p className='project-title'>{_data.title}</p>
           <p className='project-info'>{_data.info.map(keyword => <span>{keyword}&nbsp;</span>)}</p>
           <div className="item">
             <img 

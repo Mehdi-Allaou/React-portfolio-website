@@ -6,6 +6,10 @@
   align-items: center;
   border-top: 2px solid $mainColor;
 
+  @include mobile{
+    margin-bottom: 5%;
+  }
+
   h1 {
     font-size: 50px;
     padding: 2px 0;
@@ -59,7 +63,7 @@
           content: '#';
           color: $second-color;
           font-weight: 500;
-          font-size: 25px;
+          font-size: 15px;
         }
       }
     }
@@ -105,6 +109,21 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
+      background-color: hsl(193, 9%, 80%);
+      margin: .5%;
+      border-radius: 7%;
+
+      
+
+
+
+      .project-title {
+        margin: 10px auto;
+        color: $second-color;
+        font-size: 25px;
+        font-weight: 700;
+      }
+
       .btn{
         background-color: $mainColor;
         color: white;

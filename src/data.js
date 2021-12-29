@@ -25,7 +25,7 @@ export const projectPortfolio = [
     },
     {
       id: 4,
-      title: "Portfolio website v.1",
+      title: "Portfolio Website v.1",
       img: "./assets/project4.png",
       src: '/',
       git: 'https://github.com/Mehdi-Allaou/React-portfolio-website.git',
