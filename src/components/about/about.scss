@@ -25,7 +25,10 @@
     }
   }
   .container {
-    width: 90%;
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -33,25 +36,68 @@
 
     @include mobile {
       flex-direction: column;
-      gap: 80px;
+      // gap: 80px;
     }
 
+    .text-div {
+      position: absolute;
+      z-index: 5;
+      
+
+  
+
+      p{
+        width: 90%;
+        margin: 0 auto;
+        overflow: visible;
+        // text-align: justify;
+        font-size: 1.5em;
+        font-family: 'Fuzzy Bubbles';
+        font-weight: 600;
+
+        @include mobile {
+          font-size: 1rem;
+        }
+      }
+    }
+    
+
     .left-container {
-      display: flex;
-      width: 100%;
-      flex: .6;
-      padding: 10px;
+      position: absolute;
+      z-index: 3;
+      inset: 10% 0 0 0;
+
+      background-color: rgb(212, 231, 207);
+      // margin: 50px;
+      height: 70%;
+      width: 60%;
+      border-radius: 15%;
+      transform: rotate(-20deg);
 
       @include mobile {
-        flex-direction: column;
-        gap: 80px;
+        width: 80%;
+        inset: 10% 0 0 -20%;
       }
+      // position: relative;
+      // display: flex;
+      // width: 100%;
+      // flex: .6;
+      // padding: 10px;
 
-      p {
-        overflow: visible;
-        text-align: justify;
-        font-size: 1.5em;
-      }
+      
+      // @include mobile {
+      //   flex-direction: column;
+      //   gap: 80px;
+      // }
+
+      // p {
+      //   position: absolute;
+      //   z-index: 5;
+
+      //   overflow: visible;
+      //   text-align: justify;
+      //   font-size: 1.5em;
+      // }
 
       // img {
       //   float: right;
@@ -63,19 +109,34 @@
     }
 
     .right-container {
-      flex: .4;
-      overflow-x: visible;
-      border-radius: 50px;
+      position: absolute;
+      z-index: 1;
+      inset: 15% 0 0 50%;
 
-      .img-container {
-        border-radius: 50%;
-        background-color: $third-color;
+      background-color: rgb(190, 211, 209);
+      // margin: 50px;
+      height: 80%;
+      width: 70%;
+      border-radius: 15%;
+      transform: rotate(40deg);
 
-        img {
-          width: 100%;
-          object-fit: cover;
-        }
+      @include mobile {
+        width: 100%;
       }
+    //   flex: .4;
+    //   overflow-x: visible;
+    //   border-radius: 50px;
+
+
+    //   .img-container {
+    //     border-radius: 50%;
+    //     background-color: $third-color;
+
+    //     img {
+    //       width: 100%;
+    //       object-fit: cover;
+    //     }
+    //   }
     }
   }
 }

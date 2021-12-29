@@ -12,13 +12,19 @@ export const About = () => {
         <br />
       </div>
       <div className="container">
-        <div className="left-container">
+
+        <div className="text-div">
           <p>
             <Text />
           </p>
         </div>
+
+        <div className="left-container">
+        </div>
+
         <div className="right-container">
         </div>
+        
       </div>
     </div>
   )
