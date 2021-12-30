@@ -38,20 +38,24 @@
     .left {
 
       .contact-text {
+        display: flex;
+          // flex-direction: column;
+          justify-content: center;
+          align-items: center;
 
         .contact-list {
           background-color: rgb(232, 248, 234);
           border-radius: 20px;
-          display: flex;
-          flex-direction: column;
+          
           gap: 3px;
           text-decoration: none;
           width: 100%;
           padding: 10px 100px;
+          margin-top: 5vh;
   
-          @include mobile {
-            adding: 10px;
-          }
+          // @include mobile {
+          //   margin: 0 10px;
+          // }
           h4 {
             margin-top: 15px;
           }
@@ -66,6 +70,10 @@
           }
           p {
             font-weight: 400;
+
+            &:hover {
+              opacity: .6;
+            }
           }
         }
       }
