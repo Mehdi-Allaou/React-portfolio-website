@@ -22,13 +22,13 @@ export const Projects = () => {
       <h1 className='main-text'>projects</h1>
       <div className="container">
         {data.map(_data => (
-        <div className='wrapper'>
+        <div className='wrapper' key={_data.id}>
           <p className='project-title'>{_data.title}</p>
-          <p className='project-info'>{_data.info.map(keyword => <span>{keyword}&nbsp;</span>)}</p>
+          <p className='project-info'>{_data.info.map(keyword => <span key={keyword}>{keyword}&nbsp;</span>)}</p>
           <div className="item">
             <img 
               src={_data.img} 
-              alt="project preview image" 
+              alt="" 
               onClick={() => window.open(_data.src, '_blank')}
             />
             <h3>{_data.title}</h3>
