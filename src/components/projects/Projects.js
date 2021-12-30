@@ -3,9 +3,7 @@ import { projectPortfolio } from '../../data';
 
 import './projects.scss';
 
-
 export const Projects = () => {
-
   const [selected] = useState('featured');
   const [data, setData] = useState([]);
 
@@ -21,7 +19,7 @@ export const Projects = () => {
 
   return (
     <div className='projects' id='projects'>
-      <h1>projects</h1>
+      <h1 className='main-text'>projects</h1>
       <div className="container">
         {data.map(_data => (
         <div className='wrapper'>
@@ -30,7 +28,7 @@ export const Projects = () => {
           <div className="item">
             <img 
               src={_data.img} 
-              alt="" 
+              alt="project preview image" 
               onClick={() => window.open(_data.src, '_blank')}
             />
             <h3>{_data.title}</h3>
@@ -41,7 +39,7 @@ export const Projects = () => {
               View the code
             </button>
         </div>
-          ))}
+        ))}
       </div>
     </div>
   )

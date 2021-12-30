@@ -1,13 +1,14 @@
 @import '../../global.scss';
 
 .topbar {
+
+  z-index: 20;
   width: 100%;
   height: 70px;
   background-color: $third-color;
   color: $mainColor;
   position: fixed;
   top: 0;
-  z-index: 3;
   transition: all 1s ease;
 
   .wrapper {
@@ -44,9 +45,7 @@
 
           svg {
             font-size: 30px;
-          }
-          
-          
+          }       
           :hover {
             color: #fff;
             // color: $mainColor;
@@ -61,6 +60,7 @@
     }
     .right {
       .hamburger {
+        // z-index: 9;
         width: 32px;
         height: 25px;
         display: flex;
@@ -79,15 +79,12 @@
     }
   }
   &.active {
+    z-index: 11;
     background-color: $mainColor;
     color: #fff;
-  // &.active *:hover {
-  //   color:red;
-  // }
-
-
 
     .hamburger {
+      
       span {
         &:first-child {
           background-color: #fff;

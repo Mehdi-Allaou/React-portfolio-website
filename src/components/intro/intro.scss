@@ -1,4 +1,3 @@
-
 @import '../../global.scss';
 
 .intro {
@@ -9,7 +8,6 @@
     align-items: center;
     justify-content: center;
     }
-
   .left {
     flex: .5;
     overflow: hidden;
@@ -117,7 +115,6 @@
         }
       }
     }
-
     a{
       position: absolute;
       bottom: 10px;

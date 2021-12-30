@@ -1,19 +1,11 @@
-import { useState } from 'react'
 import './contact.scss'
 
 export const Contact = () => {
 
-  const [message, setMessage] = useState(false)
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setMessage(true)
-  }
-
   return (
     <div className='contact' id='contact'>
       <div className="headtext">
-        <h1>contact</h1>
+        <h1 className='main-text'>contact</h1>
       </div>
       <div className="container">
         <div className="left">
@@ -38,18 +30,10 @@ export const Contact = () => {
             </ul>
           </div>
         </div>
-        {/* <div className="right">
-          <form onSubmit={handleSubmit}>
-            <input type="text" placeholder='Firstname'/>
-            <input type="text" placeholder='Lastname'/>
-            <input type="text" placeholder='Email'/>
-            <textarea placeholder='Message'></textarea>
-            <button type='Submit'>Send</button>
-            {message && <span>Thank you for your message, I'll reply as soon as possible :)</span>}
-          </form>
-        </div> */}
+        <footer>
+          <p>Mehdi Allaou</p>
+        </footer>
       </div>
-      
     </div>
   )
 }

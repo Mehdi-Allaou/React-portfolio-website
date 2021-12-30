@@ -6,8 +6,13 @@
   height: 100vh;
   background-color: $fourth-color;
 
-  p, h1, h2, h3, h4 {
+  p, h1, h2, h3, h4, span {
     color: $mainColor;
+    font-family: 'Jost', sans-serif;
+  }
+
+  .main-text {
+    font-family: 'Roboto', sans-serif;
   }
   
   .sections{

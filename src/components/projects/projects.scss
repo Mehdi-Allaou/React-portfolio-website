@@ -9,7 +9,6 @@
   @include mobile{
     margin-bottom: 5%;
   }
-
   h1 {
     font-size: 50px;
     padding: 2px 0;
@@ -119,24 +118,22 @@
         font-size: 25px;
         font-weight: 700;
       }
-
       .btn{
         background-color: $mainColor;
         color: white;
-        font-family: inherit;
         font-size: 14px;
         font-weight: 400;
-        // width: 120px;
+        letter-spacing: .2px;
         padding: .5em 3em;
         margin-bottom: 1rem;
-        cursor: pointer;
         border-radius: 15px;
-        border-color: black;
+        border: none;
+        cursor: pointer;
 
         &:hover {
           color: $mainColor;
           background-color: $third-color;
-          transition: all .5s ease;
+          transition: all .3s ease;
         }
       }
     }
