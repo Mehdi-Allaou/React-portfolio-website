@@ -11,7 +11,6 @@ export const Intro = () => {
       backDelay: 1500,
       backspeed: 60,
       showCursor: true,
-      // strings: ['Developer', 'Designer', 'Frontender']
       strings: ['Frontend Developer', 'UX / UI Designer', 'JavaScript Developer']
     });
   }, [])
